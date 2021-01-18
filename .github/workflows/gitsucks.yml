@@ -14,6 +14,10 @@ jobs:
         server: ftp.cloudforteexperiencecenter.com
         username: github@cloudforteexperiencecenter.com
         password: ${{ secrets.ftp_password }}
+
+name: remote ssh command
+on: [push]
+jobs:
     build:
     name: Build
     runs-on: ubuntu-latest
